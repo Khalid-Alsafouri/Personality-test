@@ -179,7 +179,7 @@ N=(n/8)*100
 
 
 #training_data and prediction algorithm
-training_data=pd.read_csv(r'train.csv')
+training_data=pd.read_csv(r'archive\train.csv')
 
 training_data = training_data.values
 
@@ -198,7 +198,7 @@ X_train
 y_train = training_data.iloc[:, -1].values
 y_train
 
-testing_data=pd.read_csv(r"test.csv")
+testing_data=pd.read_csv(r"archive\test.csv")
 X_test = training_data[[0,2,3,4,5,6]].values
 X_test
 y_test = training_data.iloc[:, -1].values
